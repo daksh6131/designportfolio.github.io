@@ -1,0 +1,156 @@
+
+@font-face {
+  font-family: 'Circular Std';
+  src: url('fonts/CIRCULARSTD-BOLD.eot');
+  src: url('fonts/CIRCULARSTD-BOLD.eot?#iefix') format('embedded-opentype'),
+       url('fonts/CIRCULARSTD-BOLD.woff2') format('woff2'),
+       url('fonts/CIRCULARSTD-BOLD.woff') format('woff'),
+       url('fonts/CIRCULARSTD-BOLD.ttf')  format('truetype'),
+       url('fonts/CIRCULARSTD-BOLD.svg#Circular Std') format('svg');
+}
+
+* {
+  color: black;
+  box-sizing: border-box;
+  font-family: 'Circular Std',sans-serif;
+  margin: 0px;
+  
+}
+
+body{
+  background-color: #fafafa;
+}
+
+header {
+  display: flex;
+  flex-direction: row;
+	justify-content:flex-start;
+  padding: 32px 165px 0 165px;
+ 
+	background-color:rgb(255, 255, 255);
+	height: 100px;
+	font-weight: 700;
+	font-size: 16px;
+	font-style: normal;
+	line-height: 20px;
+
+  }
+
+ 
+.naviLinks {
+  list-style: none;
+  background-color:rgb(255, 255, 255);
+	height: 100px;
+  max-width: 1440px;
+	font-weight: 700;
+	font-size: 16px;
+	font-style: normal;
+	line-height: 20px;
+  
+
+}
+
+.naviLinks li{
+  
+  display: inline-block;
+  background-color:rgb(255, 255, 255);
+  padding-inline-start: 70px;
+}
+
+li,a,p{
+  text-decoration: none;
+  
+}
+
+.naviLinks li a:hover {
+  color: blueviolet;
+  
+  
+}
+
+
+img {
+  cursor: pointer;
+  margin-right: auto;
+  width: min-content;
+  height: min-content;
+  
+  /* order: 1; */
+  
+}
+
+.flex-container{
+  
+	display: flex;
+  justify-content: flex-start;
+  max-width: 1440px;
+	flex-direction: row;
+	padding: 80px 165px 0 165px;
+  
+} 
+
+#flex-item1 {
+  /* width: max-content; */
+  overflow: hidden;
+  white-space: nowrap;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 40px;
+  line-height: 51px;
+  color: #1A1A1A;
+  
+}
+
+#flex-item2{
+   align-items: flex-end;
+}
+
+#display{
+
+  cursor: initial;
+  border-radius: 50%;
+  overflow: hidden;
+  max-width: 40%;
+  max-height: 40%;
+  justify-content: flex-end;
+  object-fit: cover;
+
+} 
+
+
+/* .flex-item {
+
+	-ms-flex-align: center;
+
+
+}
+
+
+/* 
+.text {
+  position: absolute;
+  width: 475px;
+  height: 124px;
+  left: 165px;
+  top: 310px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 129.7%;
+  opacity: 0.5;
+}
+
+p {
+  font-weight: bolder;
+  text-decoration: none;
+  font-size: 41px;
+}
+
+#img101 {
+  position: absolute;
+  width: 350px;
+  height: 350px;
+  left: 925px;
+  top: 140px;
+  border-radius: 50%;
+} */
