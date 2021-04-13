@@ -10,44 +10,45 @@
 }
 
 * {
+
   color: black;
   box-sizing: border-box;
   font-family: 'Circular Std',sans-serif;
   margin: 0px;
+  padding: 0px;
   
 }
 
 body{
+
   background-color: #fafafa;
+
 }
 
 header {
+
   display: flex;
   flex-direction: row;
 	justify-content:flex-start;
-  padding: 32px 165px 0 165px;
- 
+  align-items: center;
+  padding: 32px 165px 32px 165px;
 	background-color:rgb(255, 255, 255);
 	height: 100px;
 	font-weight: 700;
 	font-size: 16px;
 	font-style: normal;
-	line-height: 20px;
-
+	
   }
 
  
 .naviLinks {
+
   list-style: none;
-  background-color:rgb(255, 255, 255);
-	height: 100px;
   max-width: 1440px;
 	font-weight: 700;
 	font-size: 16px;
 	font-style: normal;
-	line-height: 20px;
   
-
 }
 
 .naviLinks li{
@@ -55,14 +56,30 @@ header {
   display: inline-block;
   background-color:rgb(255, 255, 255);
   padding-inline-start: 70px;
+
 }
 
-li,a,p{
+li,a {
+
+
   text-decoration: none;
   
 }
 
+p{
+
+  margin-top: 40px;
+  font-style: normal;
+  font-weight: 450;
+  font-size: 24px;
+  line-height: 129.7%;
+  opacity: 50%;
+
+}
+
 .naviLinks li a:hover {
+
+
   color: blueviolet;
   
   
@@ -89,31 +106,68 @@ img {
   
 } 
 
-#flex-item1 {
-  /* width: max-content; */
-  overflow: hidden;
-  white-space: nowrap;
+.flex-item{
+  display: flexbox;
+  align-items: center;
+}
+
+#flex-item-1, #flex-item-2  {
+
+ 
+  flex:1;
+  
+  
+  word-wrap: break-word;
+  text-overflow: clip;
   font-style: normal;
-  font-weight: 900;
-  font-size: 40px;
-  line-height: 51px;
+  max-width: 540px ;
+  max-height: 124px;;
   color: #1A1A1A;
   
 }
 
-#flex-item2{
-   align-items: flex-end;
+#flex-item-1 > h1 {
+
+  font-family: Circular Std;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 40px;
+  line-height: 51px 
+
+}
+
+
+#flex-item-1{
+  flex: 1;
+  margin-top: 128px;
+  
+}
+
+#flex-item-2{
+  flex: 1;
+  margin-top: 60px;
+  align-items: flex-end;
+
+}
+
+.image{
+  
+  flex: 1;
+  white-space: nowrap;
+  justify-content: flex-end;
+  
+  height: 300px;
+  width: 300px;
+ 
 }
 
 #display{
 
-  cursor: initial;
   border-radius: 50%;
-  overflow: hidden;
-  max-width: 40%;
-  max-height: 40%;
-  justify-content: flex-end;
-  object-fit: cover;
+  overflow: 0;
+  height: 300px;
+  width: 300px;
+  cursor: initial;
 
 } 
 
