@@ -37,14 +37,14 @@ header {
 	font-weight: 700;
 	font-size: 16px;
 	font-style: normal;
+  max-width: 1440px;
 	
   }
 
  
 .naviLinks {
 
-  list-style: none;
-  max-width: 1440px;
+  list-style: none;  
 	font-weight: 700;
 	font-size: 16px;
 	font-style: normal;
@@ -66,7 +66,7 @@ li,a {
   
 }
 
-p{
+#flex-item-1 > p{
 
   margin-top: 40px;
   font-style: normal;
@@ -102,63 +102,65 @@ img {
   justify-content: flex-start;
   max-width: 1440px;
 	flex-direction: row;
-	padding: 80px 165px 0 165px;
+	padding: 40px 165px 0 165px;
   
 } 
 
 .flex-item{
-  display: flexbox;
   align-items: center;
 }
 
 #flex-item-1, #flex-item-2  {
 
- 
   flex:1;
-  
-  
   word-wrap: break-word;
   text-overflow: clip;
   font-style: normal;
-  max-width: 540px ;
-  max-height: 124px;;
   color: #1A1A1A;
   
 }
 
-#flex-item-1 > h1 {
+ h1 {
 
   font-family: Circular Std;
   font-style: normal;
   font-weight: 900;
   font-size: 40px;
-  line-height: 51px 
+  line-height: 51px;
+  margin-right: auto;
+   
 
 }
 
 
 #flex-item-1{
+  
   flex: 1;
+  max-width: 540px ;  
+  max-height: 124px;;
   margin-top: 128px;
   
 }
 
 #flex-item-2{
+
   flex: 1;
   margin-top: 60px;
-  align-items: flex-end;
-
+  margin-left: auto;
+  
 }
 
 .image{
   
-  flex: 1;
-  white-space: nowrap;
-  justify-content: flex-end;
+  flex: 1;  
+  padding: 0px;
+  margin: 0px;
+  margin-left: auto;
+  max-width: 300px;
+  max-height: 300px;
   
-  height: 300px;
-  width: 300px;
- 
+  
+   
 }
 
 #display{
@@ -172,13 +174,77 @@ img {
 } 
 
 
-/* .flex-item {
+.flex-container-2{
+  
+	display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  max-width: 1440px;
+	flex-direction: row;
+	padding: 120px 165px 0 165px;
+  
+} 
 
-	-ms-flex-align: center;
 
 
+
+#seeAll{
+  
+  font-family: Circular Std;
+  font-style: normal;
+  font-weight: 450;
+  font-size: 18px;
+  line-height: 23px;
+  text-decoration-line: underline;
+  color: #000000;
+  opacity: 0.5;
+  margin-left: auto;
 }
 
+
+  
+
+.flex-container-3{
+  
+	display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+  max-width: 1440px;  
+	padding: 80px 165px 0 165px;
+  
+} 
+
+.projects{
+  flex: 0 0 45%;
+  margin-bottom: 80px;
+  height: 440px;
+  border-radius: 15px;
+  background-position: center; 
+  background-repeat: no-repeat; 
+  background-size: cover; 
+}
+
+#flex-item-5{
+  background-image: url("1.jpg")
+}
+
+#flex-item-6{
+
+  background-image: url("2.jpg")
+  }
+  
+#flex-item-7{
+
+  background-image: url("3.jpg")
+}
+
+#flex-item-8{
+  
+  background-image: url("4.jpg")
+
+}
+  
 
 /* 
 .text {
