@@ -18,6 +18,7 @@
 
 body {
   background-color: #fafafa;
+  overflow-x: hidden;
 }
 
 header {
@@ -25,13 +26,15 @@ header {
   flex-direction: row;
   justify-content: flex-start;
   align-items: center;
-  padding: 32px 165px 32px 165px;
-  background-color: rgb(255, 255, 255);
+  padding: 32px 10vw 32px 10vw;
+  background-color: rgba(255, 255, 255, 0.5);
   height: 100px;
   font-weight: 700;
   font-size: 16px;
   font-style: normal;
-  max-width: 1440px;
+  width: 100vw;
+  z-index: 300;
+  backdrop-filter: blur(5px);
 }
 
 .naviLinks {
@@ -43,8 +46,8 @@ header {
 
 .naviLinks li {
   display: inline-block;
-  background-color: rgb(255, 255, 255);
-  padding-inline-start: 70px;
+  margin-left: 70px;
+  /* background-color: rgb(255, 255, 255); */
 }
 
 li,
@@ -81,19 +84,18 @@ svg {
 
 svg:hover #right {
   transform: translateX(40%);
-  opacity: 0;
+  opacity: 0.2;
 }
 svg:hover #left {
   transform: translateX(-40%);
-  opacity: 0;
+  opacity: 0.2;
 }
 
 .flex-container {
   display: flex;
   justify-content: flex-start;
-  max-width: 1440px;
   flex-direction: row;
-  padding: 40px 165px 0 165px;
+  /* padding: 40px 10vw 0 10vw; */
 }
 
 .flex-item {
@@ -115,19 +117,18 @@ h1 {
   font-weight: 900;
   font-size: 40px;
   line-height: 51px;
-  margin-right: auto;
+  /* margin-right: auto; */
 }
 
 #flex-item-1 {
   flex: 1;
-  max-width: 540px;
+  max-width: 50vw;
   max-height: 124px;
-  margin-top: 128px;
+  margin-top: 10vh;
 }
 
 #flex-item-2 {
   flex: 1;
-  margin-top: 60px;
   margin-left: auto;
 }
 
@@ -152,9 +153,9 @@ h1 {
   display: flex;
   align-items: baseline;
   justify-content: space-between;
-  max-width: 1440px;
+  width: 100vw;
   flex-direction: row;
-  padding: 120px 165px 0 165px;
+  padding: 120px 10vw 0 10vw;
 }
 
 #seeAll {
@@ -174,8 +175,8 @@ h1 {
   flex-wrap: wrap;
   flex-direction: row;
   justify-content: space-between;
-  max-width: 1440px;
-  padding: 80px 165px 0 165px;
+  width: 100vw;
+  padding: 80px 10vw 0 10vw;
 }
 
 .projects {
@@ -210,7 +211,6 @@ h1 {
   flex-direction: row;
   justify-content: space-between;
   align-items: baseline;
-  max-width: 1440px;
 }
 
 h2 {
@@ -223,8 +223,9 @@ h2 {
 
 .outerContainer {
   display: flex;
-  max-width: 1440px;
-  padding: 80px 165px 0 165px;
+  flex-direction: row;
+  width: 100vw;
+  padding: 80px 10vw 0 10vw;
 }
 
 .outerContainer > div {
@@ -250,13 +251,13 @@ h2 {
 
 .greenParent {
   display: flex;
-  padding: 80px 165px 0 165px;
+  padding: 80px 10vw 0 10vw;
   padding-bottom: 200px;
 }
 
 .greenContainer {
   display: flex;
-  width: 1110px;
+  width: 80vw;
   height: max-content;
   background: #02eda9;
   border-radius: 10px;
@@ -281,3 +282,93 @@ h2 {
   padding-top: 40px;
   text-decoration-line: underline;
 }
+
+.sticky {
+  position: fixed;
+  top: 0;
+  padding: 0px 10vw 0px 10vw;
+}
+
+.sticky + .content {
+  padding-top: 80px;
+}
+
+.footer {
+  display: flex;
+  align-self: center;
+  background: #1a1a1a;
+}
+
+/* #footerCont{
+  /* width: 100vw; */
+
+#flex-item-15 > h2 {
+  color: #999999;
+  opacity: 0.5;
+  padding-bottom: 3.3vh;
+}
+
+#flex-item-15 {
+  padding: 10vh 0px 0px 0vh;
+}
+
+#flex-item-15 > h1 > a {
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 110%;
+  text-decoration-line: underline;
+  color: #ffffff;
+}
+
+.flex-container-7 {
+  display: flex;
+  flex-direction: row;
+  /* justify-content: flex-start; */
+  align-self: center;
+  width: 100vw;
+  padding: 0px 10vw 0px 10vw;
+}
+
+.footerContainer {
+  display: flex;
+  /* flex-direction: row; */
+  height: max-content;
+  /* width: 1440px; */
+}
+
+.footer {
+  flex: 1;
+  flex-direction: column;
+  height: 50vh;
+}
+
+.flex-container-10{
+  display: flex;
+  align-items: center;
+}
+
+
+
+.horizontal-rule {
+  margin: 15vh 0px 0px 0vh;
+  align-self: center;
+  border-top: 1px solid white;
+  width: 80vw;
+  opacity: 0.2;
+  height: 1px;
+  z-index: 1000;
+}
+
+#flex-item-16{
+  font-size: 14px;
+  font-feature-settings: 'liga' off;
+  color: #D9DBE1;
+}
+#flex-item-17{
+  margin-left:auto ;
+}
+#flex-item-17,#flex-item-16{
+padding-top: 4vh;
+}
+
+
