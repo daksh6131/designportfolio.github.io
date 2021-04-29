@@ -146,8 +146,7 @@ h1 {
 
 #flex-item-2 {
   display: flex;
-  justify-content: center;
-  align-items: center;
+  
 }
 
 
@@ -158,6 +157,7 @@ h1 {
   height: 300px;
   width: 300px;
   cursor: initial;
+  align-self: flex-end;
 }
 
 .flex-container-2 {
@@ -306,11 +306,11 @@ h2 {
 }
 
 #flex-item-13 {
-  padding: 56px 0px 0px 65px;
+  padding: 4vh 2vw 0px 2vw;
 }
 
 #flex-item-14 {
-  padding: 56px 65px 56px 65px;
+  padding: 4vh 6vw 4vh 6vw;
 }
 #flex-item-14 > p {
   font-style: normal;
@@ -553,20 +553,11 @@ h2 {
     flex: 1;
   }
 
-  #flex-item-13 {
-    padding: 2vh 0px 0px 3vh;
-  }
 
-  #flex-item-14 {
-    padding: 56px 65px 56px 65px;
-  }
   #flex-item-14 > p {
-    font-style: normal;
-    font-weight: 450;
+    
     font-size: 14px;
-    opacity: 0.5;
-    padding-top: 40px;
-    text-decoration-line: underline;
+    
   }
   .skills > ul {
     font-style: normal;
@@ -589,6 +580,7 @@ h2 {
 
   #flex-item-16 {
     font-size: 12px;
+    max-width: 40vw;
   }
 
   .greenParent {
@@ -605,17 +597,17 @@ h2 {
   }
 
   #flex-item-14{
-
+    
     padding: 4vh 6vw 4vh 6vw;
   }
 
   #flex-item-14 > h2{
-    align-self: center;
     text-align: center;
     width: 70vw;
   }
 
   #flex-item-14 > p > a{
+
     align-self: center;
     text-align: center;
     align-content: center;
