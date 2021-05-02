@@ -14,6 +14,7 @@
   font-family: "Circular Std", sans-serif;
   margin: 0px;
   padding: 0px;
+  scroll-behavior: smooth;
 }
 
 /* width */
@@ -73,11 +74,13 @@ a {
   list-style: none;
 }
 
+
 #flex-item-1 > p {
-  margin-top: 40px;
+  margin-top: 4vh;
   font-style: normal;
   font-weight: 450;
   font-size: 24px;
+  line-height: 140%;
   opacity: 50%;
 }
 
@@ -110,14 +113,14 @@ svg:hover #left {
 
 .flex-container {
   display: flex;
-  justify-content: flex-start;
   flex-direction: row;
-  /* padding: 40px 10vw 0 10vw; */
+  padding-top: 3vh;
+  align-items: center;
+  justify-content: center;
 }
 
 .flex-item {
   flex-direction: column;
-  
 }
 
 #flex-item-1,
@@ -146,10 +149,7 @@ h1 {
 
 #flex-item-2 {
   display: flex;
-  
 }
-
-
 
 #display {
   border-radius: 50%;
@@ -187,18 +187,20 @@ h1 {
   flex-direction: row;
   justify-content: space-between;
   width: 100vw;
-  padding: 80px 10vw 0 10vw;
+  padding: 8vh 10vw 0 10vw;
 }
 
 .projects {
   flex: 0 0 45%;
-  margin-bottom: 80px;
+  margin-bottom: 4vh;
   height: 440px;
   max-height: 60vh;
   border-radius: 15px;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  transition: all 0.3s;
+  transition-timing-function: ease-out;
 }
 
 #flex-item-5 {
@@ -232,14 +234,13 @@ h2 {
   font-style: normal;
   font-weight: bold;
   font-size: 24px;
-  
 }
 
 .outerContainer {
   display: flex;
   flex-direction: row;
   width: 100vw;
-  padding: 80px 10vw 0 10vw;
+  padding: 8vh 10vw 0 10vw;
 }
 
 .outerContainer > div {
@@ -254,6 +255,11 @@ h2 {
   width: 45vw;
   /* padding-right:10vw; */
 
+#resume {
+  font-size: 18px;
+  opacity: 0.5;
+  text-decoration-line: underline;
+}
 .skills {
   flex: 0 0 45%;
   margin-bottom: 5vh; /*after every skill */
@@ -325,10 +331,11 @@ h2 {
   position: fixed;
   top: 0;
   padding: 0px 10vw 0px 10vw;
+  overflow-y: hidden;
 }
 
 .sticky + .content {
-  padding-top: 80px;
+  padding-top: 0vh;
 }
 
 .footer {
@@ -421,7 +428,6 @@ h2 {
     overflow-x: hidden;
   }
   .outerContainer {
-    display: flex;
     flex-direction: column;
     width: 100vw;
     padding: 4vh 5vw 0 5vw;
@@ -446,7 +452,6 @@ h2 {
     opacity: 50%;
     height: max-content;
     width: 88vw;
-  
   }
 
   .flex-container {
@@ -460,7 +465,6 @@ h2 {
   }
 
   h1 {
-    
     font-style: normal;
     font-weight: 900;
     font-size: 24px;
@@ -474,7 +478,7 @@ h2 {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    
+
     padding: 0px;
   }
 
@@ -512,10 +516,7 @@ h2 {
     background-size: cover;
   }
   .flex-container-4 {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: space-between;
+    padding-top: 3vh;
     width: 88vw;
 
     /* margin-left: auto; */
@@ -537,7 +538,6 @@ h2 {
   h2 {
     font-weight: bold;
     font-size: 16px;
-    
   }
 
   .greenContainer {
@@ -553,11 +553,8 @@ h2 {
     flex: 1;
   }
 
-
   #flex-item-14 > p {
-    
     font-size: 14px;
-    
   }
   .skills > ul {
     font-style: normal;
@@ -567,9 +564,9 @@ h2 {
     opacity: 0.5;
   }
   .flex-container-3 {
-    padding: 10vh 5vw 0 5vw;
+    padding: 4vh 5vw 0 5vw;
   }
-  
+
   .flex-container-2 {
     padding: 10vh 5vw 0 5vw;
   }
@@ -588,29 +585,27 @@ h2 {
     padding-bottom: 10vh;
   }
 
-  #flex-item-13{
-
+  #flex-item-13 {
     display: flex;
     justify-content: center;
     align-items: center;
-
   }
 
-  #flex-item-14{
-    
+  #flex-item-14 {
     padding: 4vh 6vw 4vh 6vw;
   }
 
-  #flex-item-14 > h2{
+  #flex-item-14 > h2 {
     text-align: center;
     width: 70vw;
   }
 
-  #flex-item-14 > p > a{
-
+  #flex-item-14 > p > a {
     align-self: center;
     text-align: center;
     align-content: center;
-    
+  }
+  #resume {
+    font-size: 16px;
   }
 }
